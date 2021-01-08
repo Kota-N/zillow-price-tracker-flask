@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: linear-gradient(#fff7f5, #fff);
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  min-width: 55vw;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+}
+
+.add-delete-container {
+  max-width: 35vw;
+  min-width: 35vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.add-house-container {
+  max-width: 32vw;
+  min-width: 32vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+  border-bottom: solid 30px#f8ebea;
+  transition: all 0.8s ease;
+}
+
+.add-house-container:hover {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 10px 15px rgba(255, 255, 255, 0.4);
+}
+
+input {
+  border: none;
+  max-width: 100%;
+  min-width: 100%;
+  border-bottom: 1px solid #f07869;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 300;
+  background: none;
+  color: #d1695b;
+  padding: 25px 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+button {
+  border: none;
+  background: #f07869;
+  color: #ecd0cc;
+  font-size: 30px;
+  padding: 20px 0;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+button:active {
+  transform: scaleY(0.95);
+}
+
+.delete-house-container {
+  max-width: 32vw;
+  min-width: 32vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  transition: all 0.8s ease;
+}
+
+.delete-house-container:hover {
+  background: rgba(248, 255, 236, 0.4);
+  box-shadow: 0 0 10px 15px rgba(250, 255, 245, 0.4);
+}
+.delete-house-container button {
+  background: #d6f075;
+  color: #a5c23b;
+}
+
+.table-container {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.table-container h3 {
+  font-weight: 300;
+}
+
+.tables {
+  margin-top: 30px;
+}
+
+.tables a {
+  text-decoration: none;
+  background: #f07869;
+  color: #ecd0cc;
+  font-size: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 400;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.tables a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .chart-container {
+    max-width: 90vw;
+    min-width: 90vw;
+  }
+
+  .add-delete-container {
+    max-width: 90vw;
+    min-width: 90vw;
+  }
+
+  .add-house-container {
+    max-width: 90vw;
+    min-width: 90vw;
+  }
+
+  .delete-house-container {
+    max-width: 90vw;
+    min-width: 90vw;
+  }
+}
