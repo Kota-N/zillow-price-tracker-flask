@@ -2,7 +2,7 @@ import sqlite3
 
 # Database
 
-conn = sqlite3.connect('db.sqlite')
+conn = sqlite3.connect('/var/www/html/zillow_price_tracker/db.sqlite')
 cursor = conn.cursor()
 
 cursor.execute(

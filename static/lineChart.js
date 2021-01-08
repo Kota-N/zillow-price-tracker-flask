@@ -1,13 +1,5 @@
 const ctx = document.getElementById('line-chart').getContext('2d');
 
-// fetch('http://127.0.0.1:5000/api/houses').then(res => res.json()).then(data => console.log(data));
-// fetch('http://127.0.0.1:5000/api/prices').then(res => res.json()).then(data => console.log(data));
-// fetch('http://127.0.0.1:5000/api/dates').then(res => res.json()).then(data => console.log(data));
-// fetch('http://127.0.0.1:5000/api/prices/1').then(res => res.json()).then(data => console.log(data));
-
-// remove everything but dot
-// Number(currency.replace(/[^0-9.-]+/g,""));
-
 const getRandomRGB = () => {
   r = Math.floor(Math.random() * 200) + 40;
   g = Math.floor(Math.random() * 200) + 40;
@@ -18,19 +10,19 @@ const getRandomRGB = () => {
 
 // Fetches
 const fetchHouseData = async () => {
-  const res = await fetch('http://127.0.0.1:5000/api/houses');
+  const res = await fetch('/zillow_price_tracker/api/houses');
   const data = await res.json();
   return data;
 };
 
 const fetchPriceData = async () => {
-  const res = await fetch('http://127.0.0.1:5000/api/prices');
+  const res = await fetch('/zillow_price_tracker/api/prices');
   const data = await res.json();
   return data;
 };
 
 const fetchDateData = async () => {
-  const res = await fetch('http://127.0.0.1:5000/api/dates');
+  const res = await fetch('/zillow_price_tracker/api/dates');
   const data = await res.json();
   return data;
 };
@@ -48,7 +40,7 @@ const buildChartLabels = dateData => {
 
 // function for buildDatasets() --------------------------->
 const buildDatasetsData = async (dateData, houseId) => {
-  const res = await fetch('http://127.0.0.1:5000/api/prices/' + houseId);
+  const res = await fetch('/zillow_price_tracker/api/prices/' + houseId);
   const priceDataById = await res.json();
 
   datasetsData = [];
