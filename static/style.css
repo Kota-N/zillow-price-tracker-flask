@@ -8,7 +8,7 @@
 }
 
 body {
-  background: linear-gradient(#fff7f5, #fff);
+  background: linear-gradient(#d6d6d6, #fff);
   background-repeat: no-repeat;
   font-family: 'Roboto', sans-serif;
 }
@@ -47,7 +47,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding-bottom: 50px;
-  border-bottom: solid 30px#f8ebea;
+  border-bottom: solid 30px#e6e6e6;
   transition: all 0.8s ease;
 }
 
@@ -60,12 +60,12 @@ input {
   border: none;
   max-width: 100%;
   min-width: 100%;
-  border-bottom: 1px solid #f07869;
+  border-bottom: 1px solid #919191;
   margin-bottom: 30px;
   font-size: 20px;
   font-weight: 300;
   background: none;
-  color: #d1695b;
+  color: #888888;
   padding: 25px 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
@@ -73,8 +73,8 @@ input {
 
 button {
   border: none;
-  background: #f07869;
-  color: #ecd0cc;
+  background: #272727;
+  color: #e4e4e4;
   font-size: 30px;
   padding: 20px 0;
   width: 100%;
@@ -110,8 +110,8 @@ button:active {
   box-shadow: 0 0 10px 15px rgba(250, 255, 245, 0.4);
 }
 .delete-house-container button {
-  background: #d6f075;
-  color: #a5c23b;
+  background: #8f6862;
+  color: #ffffff;
 }
 
 .table-container {
@@ -133,8 +133,8 @@ button:active {
 
 .tables a {
   text-decoration: none;
-  background: #f07869;
-  color: #ecd0cc;
+  background: #272727;
+  color: #e4e4e4;
   font-size: 20px;
   padding: 10px 20px;
   font-size: 20px;
